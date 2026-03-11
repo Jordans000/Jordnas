@@ -50,15 +50,15 @@ function updateThemeButtons(theme) {
 // ===== Time-based Greeting =====
 function getGreeting() {
     const hour = new Date().getHours();
-    if (hour < 12) return 'Good morning';
-    if (hour < 17) return 'Good afternoon';
+    if (hour < 12) return 'Good Morning';
+    if (hour < 17) return 'Good Afternoon';
     return 'Good evening';
 }
 
 function setGreeting() {
     const greetingEl = document.getElementById('greeting');
     if (greetingEl) {
-        greetingEl.textContent = getGreeting() + ', Alex';
+        greetingEl.textContent = getGreeting() + ', Jordan';
     }
 }
 
@@ -112,7 +112,7 @@ function updateMessageView(index) {
             sender: 'Sarah Chen',
             email: 'sarah.chen@company.com',
             date: 'Jan 2, 2026 at 9:45 AM',
-            body: `<p>Hi Alex,</p>
+            body: `<p>Hi Jordan,</p>
                    <p>I wanted to give you a quick update on the Q1 dashboard redesign project. We've completed the wireframes and initial mockups, and the team is ready to move into the development phase.</p>
                    <p>Key highlights from our progress:</p>
                    <p>• User research completed with 15 participants<br>
@@ -127,7 +127,7 @@ function updateMessageView(index) {
             sender: 'Analytics Bot',
             email: 'analytics@company.com',
             date: 'Jan 1, 2026 at 8:00 AM',
-            body: `<p>Hello Alex,</p>
+            body: `<p>Hello Jordan,</p>
                    <p>Here's your weekly analytics summary for December 25-31, 2025:</p>
                    <p><strong>Traffic Overview:</strong><br>
                    Total visitors: 45,230 (+12% vs last week)<br>
